@@ -1,0 +1,76 @@
+<style>
+
+	a:link {color : #C0C0C0;}
+	a:visited {color : #C0C0C0;}
+	a:hover {color : #C0C0C0;}
+	a:active {color : #C0C0C0;}
+		
+	#sfondo
+	{
+		position : fixed;
+		width: auto;
+		height: auto;
+		background-repeat: no-repeat;
+	}
+		
+	font
+	{
+		font-family : "Arial";
+		font-size: 12.5px;
+	}
+	
+	#anim1
+	{
+		width: 100px;
+		height: 0;
+		-webkit-transition:width 2s, height 2s, -webkit-transform 0.9s; /* Per Safari 3.1-6.0 */
+		transition:width 0.8s, height 0.8s, transform 0.5s;
+	}
+
+	#anim1:hover
+	{
+		width: 230px;
+		height: 10px;
+		-webkit-transform:rotate(360deg); /* Funziona solo su Chrome, Safari, Opera */
+		transform:rotate(360deg);
+	}
+		
+	#NuovaPartita
+	{
+		position:fixed;
+		top: 300px;
+		width: 300px;
+		left : 64px;
+		color : #C0C0C0;
+		text-shadow: 1.8px 1.8px #FFFFC9;
+	}
+		
+	#riconoscimenti 
+	{
+		position:absolute;
+		top:420px;
+		width:300px;
+		left:128px;
+		color : #C0C0C0;
+		text-shadow: 1.8px 1.8px #FFFFC9;
+	}
+		
+	#logo
+	{
+		width : 600px;
+		left : 740px;
+		top : 70px;
+		position: absolute;
+		display: none;
+	}	
+		
+	#anima1, #credit2, #menu
+	{	
+		width : 1366px;
+		left : 0;
+		top : 0;
+		position : fixed;
+		display : none;
+	}
+		
+</style>
