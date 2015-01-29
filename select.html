@@ -8,7 +8,7 @@
 			{
 				width : 28%;
 				left : 65%;
-				position : absolute;
+				position : fixed;
 			}
 			
 			.imageposition
@@ -16,27 +16,47 @@
 				margin-right : 10px;
 				width : 30%;
 				height : 30%;
-				-webkit-animation: nothovered 0.6s ease; /* Chrome, Safari, Opera */
-				animation: nothovered 0.6s ease;
 			}
 			
 			.imageposition:hover
 			{	
 				opacity : 0.40;
 				-webkit-transition: opacity 500ms;
+				transition: opacity 500ms;
 			}
 			
-		/*	@-webkit-keyframes animate
+			.coolspan
 			{
-				from {width : 20%; height : 20%;}
-				to {width : 40%; height : 40%;}
+				display : inline;
+				position: relative;
 			}
-			
-			@-webkit-keyframes nothovered 
+		
+			.coolspan:hover:after
 			{
-				from {width : 40%; height : 40%;}
-				to   {width : 20%; height : 20%;)
-			}*/
+				background: #333;
+				background: rgba(0,0,0,0.7);
+				border-radius: 5px;
+				bottom: 0;
+				color: #F0F0F0;
+				content: attr(title);
+				left: 0;
+				padding: 2px 2px 2px 2px;
+				position: absolute;
+				z-index: 98;
+				width : 100%;
+			}
+		
+			.coolspan:hover:before
+			{
+				border: solid;
+				border-color: #333 transparent;
+				border-width: 6px 6px 0 6px;
+				bottom: 20px;
+				content: "";
+				left: 50%;
+				position: absolute;
+				z-index: 99;
+			}
 			
 		</style>
 	</head>
@@ -50,10 +70,10 @@
 		amato dal popolo e da un principe di buon cuore. 
 		Il principe Pietro non conosce ci&ograve; che lo attende 
 		durante il suo percorso, ma mosso dalla voglia 
-		di conoscere sua madre, intraprende un percorso
-		che lo porter&agrave; ad allearsi con altri guerrieri.
+		di conoscere sua madre, intraprende un lungo viaggio
+		che lo porter&agrave; a crescere.
 
-								PoPoLoCrois"><img src = "Grafica/popolocrois.jpg" class = "imageposition"></img></a>
+								PoPoLoCrois" class = "coolspan"> <span  title = " "> <img src = "Grafica/popolocrois.jpg" class = "imageposition"></span></img></a>
 			
 			&nbsp &nbsp
 			<a href = "Jeanne.html" title = "Trama : 
@@ -63,9 +83,9 @@
 		da validi compagni e dalla voce di Dio, Jeanne
 		marcia impavidamente fra guerra e destino.
 
-								Jeanne D'Arc"><img src = "Grafica/jeanne.jpg" class = "imageposition"></img></a>
+								Jeanne D'Arc" class = "coolspan"><span title = " "><img src = "Grafica/jeanne.jpg" class = "imageposition"></img></span></a>
 			&nbsp &nbsp
-			<a href = "Tales.html"><img src = "Grafica/tales.jpg" class = "imageposition" title = "Trama :
+			<a href = "Tales.html" title = "Trama :
 		Asbel e Hubert trovano una ragazza senza memoria 
 		in un campo e la portano al loro villaggio, Lhant, 
 		per cercare la sua famiglia, ma, non trovandola, 
@@ -75,11 +95,8 @@
 		mostro: scoraggiato dall'accaduto, Asbel decide di 
 		frequentare l'Accademia per diventare un cavaliere 
 		a Barona, la capitale.
-		Sette anni dopo, Cheria informa Asbel della morte 
-		di suo padre nel tentativo di difendere il villaggio 
-		dall'invasione di quello vicino, Fendel. 
 		
-		                                                                                   Tales of Graces"></img> </a>
+		                                                                                   Tales of Graces" class = "coolspan"><span title = " "><img src = "Grafica/tales.jpg" class = "imageposition"></img></span></a>
 		</center>
 	</body>
 </html>

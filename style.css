@@ -42,13 +42,32 @@
 		-webkit-transform : rotate(360deg); /* Funziona solo su Chrome, Safari, Opera */
 		transform : rotate(360deg);
 	}
+	
+	#credits:hover
+	{
+		width : 19%;
+		height : 8%;
+		-webkit-transform : rotate(360deg); /* Funziona solo su Chrome, Safari, Opera */
+		transform : rotate(360deg);
+	}
 		
 	#chat
 	{
-		position : absolute;
+		position : fixed;
 		top : 70%;
 		width : 6%;
-		left : 15%;
+		left : 11%;
+		display : none;
+		-webkit-transition : width 2s, height 2s, -webkit-transform 0.9s; /* Per Safari 3.1-6.0 */
+		transition : width 2.0s, height 2.0s, transform 0.5s;
+	}
+	
+	#credits
+	{
+		position : fixed;
+		top : 41%;
+		width : 16%;
+		left : 3%;
 		display : none;
 		-webkit-transition : width 2s, height 2s, -webkit-transform 0.9s; /* Per Safari 3.1-6.0 */
 		transition : width 2.0s, height 2.0s, transform 0.5s;
@@ -56,7 +75,7 @@
 		
 	#selezione
 	{
-		position : absolute;
+		position : fixed;
 		top : 50%;
 		width : 20%;
 		left : 5%;
@@ -67,10 +86,10 @@
 		
 	#dizionario
 	{
-		position : absolute;
+		position : fixed;
 		top : 60%;
 		width : 10.5%;
-		left : 10%;
+		left : 8%;
 		display : none;
 		-webkit-transition : width 2s, height 2s, -webkit-transform 0.9s; /* Per Safari 3.1-6.0 */
 		transition : width 2.0s, height 2.0s, transform 0.5s;
@@ -81,7 +100,7 @@
 		width : 44%;
 		left : 56%;
 		top : 12%;
-		position : absolute;
+		position : fixed;
 		display : none;
 	}	
 	
@@ -90,7 +109,7 @@
 		width : 18%;
 		left : 23%;
 		top : 39%;
-		position : absolute;
+		position : fixed;
 		display : none;
 	}	
 	
@@ -126,7 +145,19 @@
 		to {top: 70%; left : 36%;}
 	}
 	
+	@keyframes movetop 
+	{
+		from {top: -120%; left : 70%;}
+		to {top: 70%; left : 36%;}
+	}
+	
 	@-webkit-keyframes moveleft 
+	{
+		from {left: 36%;}
+		to {left: -40%;}
+	}
+	
+	@keyframes moveleft 
 	{
 		from {left: 36%;}
 		to {left: -40%;}
@@ -142,6 +173,12 @@
 	}
 	
 	@-webkit-keyframes kidnap 
+	{
+		from {left: -70%; top : 120%;}
+		to {left: 200%; top : -80%;}
+	}
+	
+	@keyframes kidnap 
 	{
 		from {left: -70%; top : 120%;}
 		to {left: 200%; top : -80%;}
@@ -181,8 +218,8 @@
 		top : 62%;
 		position : fixed;
 		display : none;
-		-webkit-animation: moveleft 5.5s; /* Chrome, Safari, Opera */
-		animation: moveleft 5.5s;
+		-webkit-animation: moveleft 5.0s; /* Chrome, Safari, Opera */
+		animation: moveleft 5.0s;
 	}	
 		
 	#anima1, #menudiz

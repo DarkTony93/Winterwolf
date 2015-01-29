@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title> Sorakairi's Winterwolf </title>
+
+		<style>
+			#sfondo
+			{
+				width : 80%;
+				height : 100%;
+				top : 0%;
+				left : 20%;
+				position : fixed;
+			}
+			
+			#Uploader
+			{
+				top : 46%;
+				left : 1%;
+				position : fixed;
+			}
+			
+			#Uploading
+			{
+				top : 52%;
+				left : 1%;
+				position : fixed;
+			}
+			
+		</style>
+		<link rel="shortcut icon" href="Grafica/portale.png">
+	</head>
+	
+	<body>
+		<img src = "Grafica/grazie.jpg" id = "sfondo"> </img>
+		
+		<form enctype ="multipart/form-data" action= "sendemail.php" method = "POST">
+			<input type = "file" name = "TXT" id = "Uploader"> </input>
+			<input type = "submit" name = "Uploading" id = "Uploading"> </input>
+		</form>
+		
+		
+	</body>
+</html>
