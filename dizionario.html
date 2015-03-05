@@ -18,17 +18,23 @@
 				var dicios = "http://it.dicios.com/enit/";
 				var dictionaryreference = "http://dictionary.reference.com/browse/";
 				var google = "https://translate.google.it/#en/it/";
+				var babla = "http://it.bab.la/dizionario/inglese-italiano/";
+				var larousse = "http://www.larousse.com/it/dizionari/inglese-italiano/";
 				var parola = document.getElementById("input").value;
 				var output1 = wordreference + parola; 
 				var output2 = dicios + parola;
 				var output3 = dictionaryreference + parola;
-				var output4 = google + parola;
+				var output4 = babla + parola;
+				var output5 = google + parola;
+				var output6 = larousse + parola;
 				var Features = "menubar = yes, location = yes, resizable = no, scrollbars = no, status = yes, width = 480px, height = 480px";
 				
 				window.open(output1, "Wordreference", Features);
 				window.open(output2, "Dicios", Features);
 				window.open(output3, "Dictionary Reference", Features);
-				window.open(output4, "Google", Features);
+				window.open(output4, "Bab.la", Features);
+				window.open(output5, "Google", Features);
+				window.open(output6, "Larousse", Features);
 			}
 			
 			function BloccaEnterKey(evento) 
@@ -51,7 +57,7 @@
 	<body> 
 		<img src = "Grafica/canyon.jpg" id = "menudiz"> </img>
 		<img src = "Grafica/logo.png" id = "logo"> </img>
-		<img src = "Grafica/red1.png" id = "red"> </img>
+		<img src = "Grafica/red1.gif" id = "red"> </img>
 		
 		<form name = "submit" method = "POST">
 		<div id = "boxparola">
@@ -65,7 +71,7 @@
 			In questo caso si prega di cliccare pi&ugrave; volte il pulsante Invia, <br>
 			o di disattivare il blocco popup (non consigliato). <br> <br>
 			
-			<i>Servizi utilizzati : Wordreference, Dicios, Dictionary Reference, Google Translator.</i>
+			<i>Servizi utilizzati : Wordreference, Dicios, Dictionary Reference, Bab.la, Larousse, Google Translator.</i>
 		</div>
 		</form>
 	</body>

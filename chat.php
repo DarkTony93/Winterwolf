@@ -3,11 +3,27 @@
 		<script type = "text/javascript" src = "jquery.js"></script>
 		<script type = "text/javascript">
 			
-			setInterval(function () {
+			/*setInterval(function () {
 				$("#text1").load("http://sorakairiwinterwolf.altervista.org/chatita.txt");
 				var scroll = $('#text1').scrollTop();
 				$('#text1').scrollTop(scroll);
-			}, 1000);
+			}, 1000);*/
+			
+			$(document).ready(function(){
+				$("#text1").load(function(){
+					$.get("http://sorakairiwinterwolf.altervista.org/chatita.txt", function(data, status){
+					alert("Data: " + data + "\nStatus: " + status);
+					});
+				});
+			});
+			
+			$(document).ready(function(){
+				$("#text1").load(function(){
+					$.post("http://sorakairiwinterwolf.altervista.org/chatita.txt", function(data, status){
+					alert("Data: " + data + "\nStatus: " + status);
+					});
+				});
+			});
 			
 		</script>
 		<style>
@@ -55,7 +71,9 @@
 				
 			$chat = fopen("chatita.txt", "a+");
 			$message = $name . ": " . $_POST["TXT"] . "\r\n";
-			fwrite($chat, $message);
+			$length = strlen($message);
+			if($length < 200)
+				fwrite($chat, $message);
 			fclose($chat);
 		}
 	}

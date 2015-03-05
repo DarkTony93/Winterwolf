@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title> Sorakairi's Winterwolf </title>	
+		<link rel="shortcut icon" href="Grafica/portale.png">
+		<style>
+			
+			#logo
+			{
+				width : 100%;
+				height : 20%;
+				left : 0;
+				top : 0;
+				position : fixed;
+				z-index : 101;
+			}
+			
+			#sfondo
+			{
+				width : 100%;
+				height : 100%;
+				left : 0;
+				top : 0;
+				position : fixed;
+				z-index : -1;
+			}
+			
+			.imageposition
+			{
+				margin-left : 70px;
+				width : 15%;
+				height : 38%;
+				transition: all 0.2s ease-in-out;
+				-webkit-transition : all 0.3s ease-in-out;
+				z-index : 100;
+			}
+			
+			.imageposition:hover
+			{	
+				-webkit-transform: scale(2.0);
+				transform: scale(2.0);
+			}
+			
+			@-webkit-keyframes movetop 
+			{
+				from {top: -120%; left : 70%;}
+				to {top: 70%; left : 36%;}
+			}
+	
+			@keyframes movetop 
+			{
+				from {top: -120%; left : 70%;}
+				to {top: 70%; left : 36%;}
+			}
+			
+		</style>
+	</head>
+	
+	<body bgcolor = "black">
+		<img src = "Grafica/banner.jpg" id = "logo"></img>
+			<img src = "Grafica/Galleria.png" id = "sfondo"></img>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<img src = "Grafica/1.png" class = "imageposition"></img>
+			<img src = "Grafica/2.png" class = "imageposition"></img>
+			<img src = "Grafica/3.png" class = "imageposition"></img>
+			<br><br><br><br>
+			<img src = "Grafica/4.png" class = "imageposition"></img>
+			<img src = "Grafica/5.png" class = "imageposition"></img>
+			<img src = "Grafica/6.png" class = "imageposition"></img>
+			<br><br><br><br>
+			<img src = "Grafica/7.png" class = "imageposition"></img>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</body>
+</html>

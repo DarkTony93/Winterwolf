@@ -11,13 +11,6 @@
 			}
 		
 		</script>
-		<div style = "top : 72%; left : 0; position : fixed;">
-			<script type="text/javascript">
-			/* <![CDATA[ */
-				document.write('<s'+'cript type="text/javascript" src="http://ad.altervista.org/js.ad/size=320X250/r='+new Date().getTime()+'"><\/s'+'cript>');
-			/* ]]> */
-			</script>
-		</div>
 		
 		<style>
 			#boxparola
