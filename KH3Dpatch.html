@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<title> Sorakairi's Winterwolf </title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script type = "text/javascript" src = "jquery.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel = "stylesheet" type = "text/css" href = "kh3dmockup.css">
+		<link rel = "shortcut icon" href = "Grafica/heartload.png">
+		<script>
+		
+			function Check() {
+			setInterval(function(){ 
+			var string = document.readyState;
+			switch (document.readyState)
+			{
+				case "loading":
+					animate();
+				break;		
+			}}, 3000);
+			}	
+			
+			function animate()
+			{
+				$("#loader").animate({
+				}, 1000);
+			}
+		
+			$(document).ready(function()
+			{	
+				$("#loader").fadeOut(0);
+				$("#sora1").fadeOut(0);
+				$("#disney").delay(800).fadeIn(1500);
+				$("#disney").fadeOut(2000);
+				$("#square").delay(4500).fadeIn(1500);
+				$("#square").fadeOut(2000);
+				$("#ddtcred").delay(7600).fadeIn(2000);
+				$("#ddtcred").fadeOut(2000);
+				$("#back").delay(11000).fadeIn(1000);
+				$("#soraback").delay(11600).fadeIn(2000);
+				$("#soraback").fadeOut(2000);
+				$("#sora").delay(11600).fadeIn(800);
+				$("#sora").delay(2000).fadeOut(2000);
+				$("#rikuback").delay(11600).fadeIn(2000);
+				$("#rikuback").fadeOut(2000);
+				$("#riku").delay(11600).fadeIn(800);
+				$("#riku").delay(2000).fadeOut(2000);
+				$("#paperino").delay(14500).fadeIn(2000);
+				$("#paperino").fadeOut(2000);
+				$("#pippo").delay(14500).fadeIn(2000);
+				$("#pippo").fadeOut(2000);
+				$("#topolino").delay(14500).fadeIn(2000);
+				$("#topolino").fadeOut(2000);
+				$("#back").delay(4500).fadeOut(2000);
+				$("#wallmenu").delay(19000).fadeIn(3000);
+				$("#title").delay(19000).fadeIn(3000);
+				$("#downpatch").delay(19000).fadeIn(4800);
+				$("#creditpatch").delay(19000).fadeIn(4800);
+				$("#homepage").delay(19000).fadeIn(4800);
+				$("#devseddt").delay(19000).fadeIn(4800);
+				$("#AnimationContainer").delay(20000).fadeIn(4000);
+			});
+			
+			function Showtutorial() {
+				document.getElementById("tutorial").style.display = "inline";
+				$("#HANS").delay(4000);
+				$("#NTR").delay(4000);
+				document.getElementById("HANS").style.display = "inline";
+				document.getElementById("NTR").style.display = "inline";
+				document.getElementById("span1").style.display = "inline";
+			}
+			
+			function Hidetutorial() {
+				document.getElementById("tutorial").style.display = "none";
+				document.getElementById("HANS").style.display = "none";
+				document.getElementById("NTR").style.display = "none";
+				document.getElementById("span1").style.display = "none";
+			}
+			
+		</script>
+	</head>
+	
+	<body bgcolor = "white" onload = "Check()"> 
+	
+		<script type = "text/javascript" src="fallspirit.js"></script>
+		<script type = "text/javascript" src="fallcrown.js"></script>
+		<script type = "text/javascript" src="fallkey.js"></script>
+		<script type = "text/javascript" src="fallnightmare.js"></script>
+		<script type = "text/javascript" src="fallmouse.js"></script>
+		<script type = "text/javascript" src="fallheart.js"></script>
+		
+		<div id="AnimationContainer">
+			<img class="spirit" src="Grafica/spirit.png"></img>
+			<img class="crown" src="Grafica/crown.png"></img>
+			<img class="key" src="Grafica/key.png"></img>
+			<img class="mouse" src="Grafica/mouse.png"></img>
+			<img class="heart" src="Grafica/heart.png"></img>
+			<img class="nightmare" src="Grafica/nightmare.png"></img>
+		</div>
+		
+		<img src = "Grafica/heartload.png" id="loader"> </img>
+		<img src = "Grafica/disney.gif" id = "disney"> </img>
+		<span title = "Descrizione:
+	Adatta a coloro che hanno già installato
+	un custom firmware (Launcher Gateway 3DS,
+	CakesFW, Pasta CFW ecc.) oppure hanno
+	intenzione di installarne uno.
+	È compatibile con firmware < 9.3.
+
+					Deep Dive Translations" id = "span1"><a href = "https://www.dropbox.com/s/dy6enj5bjs0bh6u/Patch_KH3DITA_0.99-1_DDT%20%28NTR%29.rar?dl=1"> <img src = "Grafica/NTR.png" id= "NTR"> </span></img> </a>
+		<span title = "Descrizione:
+	Da avviare tramite l'homebrew launcher.
+	È compatibile con qualsiasi versione del firmware
+	rilasciata finora.
+
+					Deep Dive Translations" id = "span1"><a href = "https://www.dropbox.com/s/gmzzg8h5u3udido/Patch_KH3DITA_0.99-1_DDT%20%28HANS%29.rar?dl=1"><img src = "Grafica/HANS.png" id = "HANS"> </span></img> </a>
+		<img src = "Grafica/squareenixlogo.jpg" id = "square"> </img>
+		<img src = "Grafica/soramockup1.png" id = "sora"> </img>
+		<img src = "Grafica/rikumockup2.png" id = "riku"> </img>
+		<img src = "Grafica/donaldmockup.png" id = "paperino"> </img>
+		<img src = "Grafica/goofymockup.png" id = "pippo"> </img>
+		<img src = "Grafica/mickeymockup.png" id = "topolino"> </img>
+		<img src = "Grafica/Zephyr.png" id = "wallmenu"> </img>
+		<img src = "Grafica/mockbackground.png" id = "back"> </img>
+		<img src = "Grafica/Sorabackground.png" id = "soraback"> </img>
+		<img src = "Grafica/Rikubackground.png" id = "rikuback"> </img>
+		<img src = "Grafica/DDTBlog5.png" id = "ddtcred"> </img>
+		<img src = "Grafica/boxtutorial.png" id = "tutorial" onclick = "Hidetutorial()"> </img>
+		<img src = "Grafica/devseddt.png" id = "devseddt"> </img>
+	    <img src = "Grafica/downpatch.png" id = "downpatch" type = "submit" onsubmit = "Showtutorial()" onclick = "Showtutorial()"> </img> </a>
+		<a href = "credits.html"> <img src = "Grafica/creditpatch.png" id = "creditpatch"> </img> </a>
+		<a href = "index.html"> <img src = "Grafica/homepage.png" id = "homepage"> </img> </a>
+		<img src = "Grafica/KH3DLOGO.png" id = "title"> </img>
+
+		<div style = "text-align : right">
+			<audio loop autoplay>
+				<source src = "Audio/DB_Dubstep.mp3" type = "audio/mpeg" id = "Song">
+			</audio>
+		</div>
+		
+	</body>
+</html>
